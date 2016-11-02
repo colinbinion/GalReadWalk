@@ -17,7 +17,7 @@ router.post("/", function(req, res, next) {
   req.checkBody("title", "Title is empty or too long").notEmpty().isLength({max: 255});
   req.checkBody("genre", "Genre is empty or too long").notEmpty().isLength({max: 255});
   req.checkBody("description", "Descriotion is missing or too long").notEmpty().isLength({max: 2000});
-  req.checkBody("cover_image_url", "Not a URL").isUrl(req.body.cover_url);
+  // req.checkBody("cover_image_url", "Not a URL").isUrl(req.body.cover_url);
 
   var errors = req.validationErrors();
   if (errors){
