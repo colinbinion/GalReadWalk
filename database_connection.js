@@ -17,9 +17,8 @@ switch (process.env.NODE_ENV){
 var configuration = {
   // development: {
     client: 'pg',
-    connection: {
-      database: process.env.DATABASE_NAME
-    }
+    connection: database_connection
+
   };
 
 module.exports = require("knex")(configuration);
