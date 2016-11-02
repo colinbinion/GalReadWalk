@@ -1,7 +1,7 @@
 <section class="books">
    <h2>Books</h2>
    <ul>
-       {{#each this}}
+       {{#each this.books}}
            <li class="book">
                <figure>
                    <img src="{{cover_url}}" alt="{{title}} book cover"/>
@@ -16,4 +16,5 @@
            </li>
        {{/each}}
    </ul>
+   <a href="books/new" class="add">Add a Book</a>
 </section>
