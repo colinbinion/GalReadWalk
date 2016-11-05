@@ -2,14 +2,8 @@
 @import "colors";
 @import "typography";
 @import "general";
-@import "header";
-@import "books";
-@import "index";
 @import "forms";
 
-body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
-
-a
-  color: #00B7FF
+@import "navigation";
+@import "header";
+@import "content";
