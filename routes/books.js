@@ -13,6 +13,12 @@ router.get("/new", function(req, res, next) {
   res.render("add_book");
 });
 
+router.get("/delete/:id", function(req, res, next) {
+  databaseConnection("book").select().where("id", request.params.id).then(function(books){
+    res.render("delete_book", {book: books[0]});
+  });
+});
+
 router.post("/", function(req, res, next) {
   req.checkBody("title", "Title is empty or too long").notEmpty().isLength({max: 255});
   req.checkBody("genre", "Genre is empty or too long").notEmpty().isLength({max: 255});
