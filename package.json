@@ -1,23 +1,23 @@
 {
-  "name": "GalReadWalk",
+  "name": "galvanize-reads",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.15.1",
-    "cookie-parser": "~1.4.3",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "dotenv": "^2.0.0",
-    "express": "~4.13.4",
-    "express-validator": "^2.21.0",
-    "hbs": "~4.0.0",
-    "knex": "^0.12.6",
-    "method-override": "^2.3.6",
-    "morgan": "~1.7.0",
+    "express": "~4.13.1",
+    "express-validator": "^2.19.0",
+    "hbs": "~3.1.0",
+    "knex": "^0.9.0",
+    "method-override": "^2.3.5",
+    "morgan": "~1.6.1",
     "node-sass-middleware": "0.8.0",
-    "pg": "^6.1.0",
+    "pg": "^4.4.3",
     "serve-favicon": "~2.3.0"
   }
 }
